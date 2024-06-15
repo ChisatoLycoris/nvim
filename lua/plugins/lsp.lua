@@ -31,6 +31,7 @@ return {
         "pyink",
         "pyright",
         "shfmt",
+        "sonarlint-language-server",
         "stylua",
         "yaml-language-server",
       },
