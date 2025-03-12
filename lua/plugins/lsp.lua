@@ -22,17 +22,13 @@ return {
     opts = {
       ensure_installed = {
         "clangd",
-        "clang-format",
         "eslint-lsp",
         "jdtls",
         "json-lsp",
         "lua-language-server",
         "markdown-oxide",
-        "pyink",
         "pyright",
-        "shfmt",
         "sonarlint-language-server",
-        "stylua",
         "yaml-language-server",
       },
     },
