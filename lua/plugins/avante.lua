@@ -14,12 +14,12 @@ return {
     -- max_tokens = 8192, -- Increase this to include reasoning tokens (for reasoning models)
     -- },
     provider = "openrouter",
-    vendors = {
+    providers = {
       openrouter = {
         __inherited_from = "openai",
         endpoint = "https://openrouter.ai/api/v1",
         api_key_name = "OPENROUTER_API_KEY",
-        model = "google/gemini-2.5-pro-exp-03-25:free",
+        model = "deepseek/deepseek-chat-v3.1:free",
         timeout = 30000,
         tempeture = 0.2,
         max_tokens = 8192,
