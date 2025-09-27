@@ -18,36 +18,30 @@ return {
     },
   },
   {
-    "williamboman/mason.nvim",
+    "neovim/nvim-lspconfig",
+    opts = {},
+  },
+  {
+    "mason-org/mason.nvim",
+    opts = {},
+  },
+  {
+    "mason-org/mason-lspconfig.nvim",
     opts = {
       ensure_installed = {
         "clangd",
-        "eslint-lsp",
+        "eslint",
         "jdtls",
-        "json-lsp",
-        "lua-language-server",
-        "markdown-oxide",
+        "jsonls",
+        "lua_ls",
+        "markdown_oxide",
         "pyright",
-        "sonarlint-language-server",
-        "yaml-language-server",
+        "yamlls",
       },
     },
-  },
-  {
-    "neovim/nvim-lspconfig",
-    ---@class PluginLspOpts
-    opts = {
-      ---@type lspconfig.options
-      servers = {
-        clangd = {},
-        eslint = {},
-        jsonls = {},
-        jdtls = {},
-        lua_ls = {},
-        markdown_oxide = {},
-        pyright = {},
-        yamlls = {},
-      },
+    dependencies = {
+      { "mason-org/mason.nvim", opts = {} },
+      "neovim/nvim-lspconfig",
     },
   },
 }
